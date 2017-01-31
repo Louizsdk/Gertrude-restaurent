@@ -10,7 +10,7 @@
 <body>
     <nav id="nav-header">
         <a href="#">
-        <h2>
+            <h2>
           La Grande Bouffe
         </h2>
         </a>
@@ -19,15 +19,28 @@
             <li><a href="#">Carte</a></li>
             <li><a href="#">Contact</a></li>
             <li><button type="button" name="button">Panier</button>
-              <div id="panier-container">
-                <p>bonjour</p>
+                <div id="panier-container">
+                    <table id="panier">
+                        <tr>
+                            <th>Nom du plat</th>
+                            <th>prix unitaire</th>
+                            <th>quantité</th>
+                            <th>sous-total</th>
+                        </tr>
+                        <tr>
+                            <td>TOTAL</td>
+                            <td></td>
+                            <td></td>
+                            <td id="panier-total"></td>
+                        </tr>
+                    </table>
+                </div>
 
-            </div></li>
+            </li>
         </ul>
 
     </nav>
     <script src="js/script.js">
-
     </script>
 </body>
 
