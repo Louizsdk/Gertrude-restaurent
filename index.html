@@ -8,6 +8,37 @@
 </head>
 
 <body>
+    <nav id="nav-header">
+        <a href="#">
+            <h2>
+        La Grande Bouffe
+          </h2>
+        </a>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Carte</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><button type="button" name="button">Panier</button>
+                <div id="panier-container">
+                    <table id="panier">
+                        <tr>
+                            <th>Nom du plat</th>
+                            <th>prix unitaire</th>
+                            <th>quantité</th>
+                            <th>sous-total</th>
+                        </tr>
+                        <tr>
+                            <td>TOTAL</td>
+                            <td></td>
+                            <td></td>
+                            <td id="panier-total"></td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
     <!-- Slide Show -->
     <!-- emplacement photo Slideshow -->
     <div class="slideshow-container">
@@ -15,7 +46,6 @@
             <img class='image' id='image' src="#" name "image1">
         </div>
         <form method="post" action="aucuntraitement.nodejs">
-            <p>
                 <!-- bouton Slide Show -->
                 <input type="radio" name="bouton" value="bouton0" id="bouton0" /><label for="bouton0"></label>
                 <input type="radio" name="bouton" value="bouton1" id="bouton1" /><label for="bouton1"></label>
@@ -25,16 +55,35 @@
     </div>
     <!-- début du titre principal-->
     <div id="Titre_Grandebouffe">
-      <h1 id="titre_principal"></h1>
-      <p id="description"></p>
+        <h1 id="titre_principal"></h1>
+        <p id="description"></p>
     </div>
 
     <div id="carte">
     </div>
 
+    <section id="map-container">
+        <h3 class="titles">Nous contacter</h3>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.214069945553!2d2.434633315804832!3d48.85412817928708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5f8bbccbfb%3A0xe7665fed802ab69!2s51+Rue+de+Vincennes%2C+93100+Montreuil!5e0!3m2!1sfr!2sfr!4v1485871899919"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
 
-        <script type="text/javascript" src='js/data.js'>  </script>
-        <script typet="text/javascript" src='js/script.js'></script>
+
+    </section>
+    <footer>
+        <div id="contact">
+
+        </div>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Carte</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </footer>
+    <script src="js/data.js">
+    </script>
+    <script src="js/script.js">
+    </script>
 </body>
 
 </html>

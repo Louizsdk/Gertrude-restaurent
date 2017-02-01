@@ -40,7 +40,6 @@ document.getElementById('description').innerHTML=contenu.description;
 // Creation balise html pour chaque plat de la carte :
 
 function ajout_PLAT(){
-
   for(var j =0;j<contenu.carte.length;j++){
     var plat = document.createElement('div');
     plat.classList.add("plat");
@@ -56,4 +55,8 @@ function ajout_PLAT(){
 }
 };
 ajout_PLAT();
+
 // Fin sz création de balise html //
+
+var contact = document.getElementById("contact");
+contact.innerHTML = "<h4>"+contenu.baseline + "</h4> <p>"+ contenu.addresse +"</p> <p>"+ contenu.codePostale + " "+ contenu.ville + "</p>";

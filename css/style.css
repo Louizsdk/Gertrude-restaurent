@@ -10,4 +10,134 @@
 .image{
   width: 80vw;
   height: 40vh;
+      }
+
+body, a, p, h1, h2, h3, h4, h5, h6, ul, span, button, form, input {
+    margin: 0;
+    padding: 0;
+    background-color: none;
+    border: none;
+    box-shadow: none;
+}
+
+body {
+    font-family: sans-serif;
+    color: rgb(79, 79, 79);
+    box-sizing: border-box;
+}
+
+section {
+    padding: 50px 35px;
+}
+
+.titles {
+  font-size: 2rem;
+  padding: 15px 0;
+  color: rgb(150, 116, 57);
+  text-transform: capitalize;
+}
+
+#nav-header {
+    padding: 20px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+#nav-header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#nav-header li {
+    padding: 0 10px;
+}
+
+#nav-header a {
+    text-decoration: none;
+    color: rgb(150, 116, 57);
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+#nav-header li a:hover {
+    border-bottom: 2px solid rgb(150, 116, 57);
+}
+
+#nav-header li button {
+    font-size: 1rem;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(150, 116, 57);
+    background-color: rgb(150, 116, 57);
+    transition: 0.3s;
+}
+
+#nav-header li button:hover {
+    background-color: #fff;
+    color: rgb(150, 116, 57);
+}
+
+#nav-header li:last-of-type {
+    position: relative;
+}
+
+#panier-container {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    display: none;
+}
+
+#panier {
+    background-color: white;
+    border-collapse: collapse;
+    width: 550px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    z-index: 250;
+}
+
+#panier-container td, #panier-container th {
+    text-transform: capitalize;
+    text-align: center;
+    border: 2px solid rgb(150, 116, 57);
+    padding: 5px;
+}
+
+
+
+
+/* PARTIE CONTACT */
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+footer {
+  background-color: rgb(246, 241, 233);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+footer li {
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(150, 116, 57);
 }
