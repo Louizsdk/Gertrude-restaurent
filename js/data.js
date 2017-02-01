@@ -8,8 +8,8 @@ var contenu = {
     'http://scrat.hellocoton.fr/img/guide/recette-ma-salade-tiede-de-chou-kale-et-lentilles-patates-douces-et-saumon-fume-18911644.jpg'
   ],
   baseline: 'La promo7 vous régale',
-  addresse: '51, rue de Vincennes',
-  codePostale: '93100',
+  adresse: '51, rue de Vincennes',
+  codePostal: '93100',
   ville: 'Montreuil',
   carte: [
     {

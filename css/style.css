@@ -1,0 +1,13 @@
+/* Slideshow container */
+.slideshow-container {
+ position: relative;
+ margin: auto;
+ text-align: center;
+}
+
+
+
+.image{
+  width: 80vw;
+  height: 40vh;
+}
