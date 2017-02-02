@@ -11,14 +11,13 @@ for(var k= 0; k<contenu.images.length;k++){
   imageSlides.appendChild(newSlide);
   singleSlide[k].style.backgroundImage = 'url('+contenu.images[k]+ ')';
 
-};
+}
 singleSlide[0].classList.add('showing');
 
 // var bouton0 = document.getElementById('bouton0');
 // var bouton1 = document.getElementById('bouton1');
 // var bouton2 = document.getElementById('bouton2');
 // var bouton3 = document.getElementById('bouton3');
-// var currentSlide = 0;
 
 // bouton0.onclick = function() {
 //     nextSlide();
@@ -33,6 +32,7 @@ singleSlide[0].classList.add('showing');
 //     nextSlide();
 // };
 
+var currentSlide = 0;
 var slideInterval = setInterval(nextSlide, 4000);
 
 function nextSlide (){
@@ -67,7 +67,7 @@ function ajout_PLAT() {
 
         document.getElementById('carte').appendChild(plat);
     }
-};
+}
 ajout_PLAT();
 // Fonction pour bouton panier
 function compteur(i) {
@@ -120,6 +120,6 @@ var createPanier = function(){
 createPanier();
 
 
-//
+
 var contact = document.getElementById("contact");
 contact.innerHTML = "<h4>" + contenu.baseline + "</h4> <p>" + contenu.addresse + "</p> <p>" + contenu.codePostale + " " + contenu.ville + "</p>";
