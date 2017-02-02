@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Grande bouffe</title>
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Carte</a></li>
             <li><a href="#">Contact</a></li>
-            <li><button type="button" name="button">Panier</button>
+            <li><button type="button" name="button" id="btn-panier"></button>
                 <div id="panier-container">
                     <table id="panier">
                     </table>
@@ -30,16 +31,16 @@
     <!-- Slide Show -->
     <!-- emplacement photo Slideshow -->
     <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img class='image' id='image' src="#" name "image1">
-        </div>
-        <form method="post" action="aucuntraitement.nodejs">
+        <ul id='slides'>
+
+        </ul>
+        <!-- <form method="post" action="aucuntraitement.nodejs"> -->
                 <!-- bouton Slide Show -->
-                <input type="radio" name="bouton" value="bouton0" id="bouton0" /><label for="bouton0"></label>
+                <!-- <input type="radio" name="bouton" value="bouton0" id="bouton0" /><label for="bouton0"></label>
                 <input type="radio" name="bouton" value="bouton1" id="bouton1" /><label for="bouton1"></label>
                 <input type="radio" name="bouton" value="bouton2" id="bouton2" /><label for="bouton2"></label>
                 <input type="radio" name="bouton" value="bouton3" id="bouton3" /><label for="bouton3"></label>
-        </form>
+        </form> -->
     </div>
     <!-- début du titre principal-->
     <div id="Titre_Grandebouffe">
