@@ -34,4 +34,4 @@ var contenu = {
       price: '14 €'
     },
   ]
-}
+};
