@@ -44,20 +44,21 @@ document.getElementById('description').innerHTML = contenu.description;
 var menuCount = [0, 0, 0];
 
 function ajout_PLAT() {
-	for (var j = 0; j < contenu.carte.length; j++) {
-		var plat = document.createElement('div');
-		plat.classList.add("plat");
-		var img_plat = document.createElement('img');
+    for (var j = 0; j < contenu.carte.length; j++) {
+        var plat = document.createElement('div');
+        plat.classList.add("plat");
+        var img_plat = document.createElement('img');
 
-		img_plat.src = contenu.images[j + 1];
-		plat.appendChild(img_plat);
-		plat.innerHTML += "<h1 class =titre_plat>" + contenu.carte[j].name + "</h1>";
-		plat.innerHTML += "<p class =description_plat>" + contenu.carte[j].description + "</p>";
-		plat.innerHTML += "<p class=price_plat>" + contenu.carte[j].price + "</p>";
-		plat.innerHTML += "<input type=button value=panier class=button name=button>";
-		document.getElementById('carte').appendChild(plat);
-	}
-}
+        img_plat.src = contenu.images[j + 1];
+        plat.appendChild(img_plat);
+        plat.innerHTML += "<h1 class =titre_plat>" + contenu.carte[j].name + "</h1>";
+        plat.innerHTML += "<p class =description_plat>" + contenu.carte[j].description + "</p>";
+        plat.innerHTML += "<p class=price_plat>" + contenu.carte[j].price + "</p>";
+        plat.innerHTML += "<button onclick=compteur(" + j + ") id=button" + j + ">Ajouter au panier</button>";
+
+        document.getElementById('carte').appendChild(plat);
+    }
+};
 ajout_PLAT();
 
 function compteur(i) {
