@@ -1,25 +1,21 @@
+// Fonction Slide Show
 var imageSlides = document.getElementById('slides');
-
 var singleSlide = document.getElementsByClassName('slide');
 for (var k = 0; k < contenu.images.length; k++) {
     var newSlide = document.createElement('li');
-
     newSlide.className = 'slide';
     imageSlides.appendChild(newSlide);
     singleSlide[k].style.backgroundImage = 'url(' + contenu.images[k] + ')';
-
 }
 singleSlide[0].classList.add('showing');
 
 var currentSlide = 0;
 var slideInterval = setInterval(nextSlide, 4000);
-
 function nextSlide() {
     singleSlide[currentSlide].className = 'slide';
     currentSlide = (currentSlide + 1) % singleSlide.length;
     singleSlide[currentSlide].className = 'slide showing';
 }
-
 // Fin fonction Slide Show
 
 // Titre + description
@@ -28,24 +24,23 @@ document.getElementById('description').innerHTML = contenu.description;
 // Fin Titre + Description
 
 // Creation balise html pour chaque plat de la carte :
-
-var menuCount = [0, 0, 0];
-
+var menuCount = [];
 function ajout_PLAT() {
     for (var j = 0; j < contenu.carte.length; j++) {
         var plat = document.createElement('div');
         plat.classList.add("plat");
         var img_plat = document.createElement('img');
-
-        img_plat.src = contenu.images[j + 1];
+        img_plat.src = contenu.carte[j].image;
         plat.appendChild(img_plat);
         plat.innerHTML += "<h1 class ='titre_plat'>" + contenu.carte[j].name + "</h1>";
         plat.innerHTML += "<p class ='description_plat'>" + contenu.carte[j].description + "</p>";
         plat.innerHTML += "<div class='footer-plat'> <p class='price_plat'>" + contenu.carte[j].price + "</p><button onclick='compteur(" + j + ")' id='button'" + j + ">Ajouter au panier</button></div>";
         document.getElementById('carte').appendChild(plat);
+        menuCount.push(0);
     }
 }
 ajout_PLAT();
+
 // Fonction pour bouton panier
 function compteur(i) {
     menuCount[i]++;
@@ -95,7 +90,6 @@ var createPanier = function() {
 };
 createPanier();
 
-
+// Integration info contact
 var contact = document.getElementById("contact");
-
 contact.innerHTML = "<h4>" + contenu.baseline + "</h4> <p>" + contenu.adresse + "</p> <p>" + contenu.codePostal + " " + contenu.ville + "</p>";
