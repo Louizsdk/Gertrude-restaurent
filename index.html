@@ -6,36 +6,23 @@
     <title>La Grande Bouffe</title>
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
     <link rel="icon" href=https://format-com-cld-res.cloudinary.com/image/private/s--MMXmEw1x--/c_limit,g_center,h_65535,w_960/a_exif,fl_keep_iptc.progressive,q_95/485131-21953121-LOGO_WEBSITE___LOGO_1.jpg>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
-
 
 <body>
     <nav id="nav-header">
         <a href="#">
             <h2>
               <img class="logo" src="https://format-com-cld-res.cloudinary.com/image/private/s--MMXmEw1x--/c_limit,g_center,h_65535,w_960/a_exif,fl_keep_iptc.progressive,q_95/485131-21953121-LOGO_WEBSITE___LOGO_1.jpg" alt="">
-
           </h2>
         </a>
         <ul>
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Carte</a></li>
             <li><a href="#">Contact</a></li>
-            <li><button type="button" name="button">Panier</button>
+            <li><button type="button" name="button" id="btn-panier"></button>
                 <div id="panier-container">
                     <table id="panier">
-                        <tr>
-                            <th>Nom du plat</th>
-                            <th>prix unitaire</th>
-                            <th>quantité</th>
-                            <th>sous-total</th>
-                        </tr>
-                        <tr>
-                            <td>TOTAL</td>
-                            <td></td>
-                            <td></td>
-                            <td id="panier-total"></td>
-                        </tr>
                     </table>
                 </div>
             </li>
@@ -45,16 +32,8 @@
     <!-- Slide Show -->
     <!-- emplacement photo Slideshow -->
     <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img class='image' id='image' src="#" name "image1">
-        </div>
-        <form method="post" action="aucuntraitement.nodejs">
-            <!-- bouton Slide Show -->
-            <input type="radio" name="bouton" value="bouton0" id="bouton0" /><label for="bouton0"></label>
-            <input type="radio" name="bouton" value="bouton1" id="bouton1" /><label for="bouton1"></label>
-            <input type="radio" name="bouton" value="bouton2" id="bouton2" /><label for="bouton2"></label>
-            <input type="radio" name="bouton" value="bouton3" id="bouton3" /><label for="bouton3"></label>
-        </form>
+        <ul id='slides'>
+        </ul>
     </div>
     <!-- début du titre principal-->
     <div id="Titre_Grandebouffe">
@@ -62,17 +41,13 @@
         <p id="description"></p>
     </div>
     <!--début de la carte -->
-
     <div id="carte">
-
     </div>
 
     <section id="map-container">
         <h3 class="titles">Nous contacter</h3>
         <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.214069945553!2d2.434633315804832!3d48.85412817928708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5f8bbccbfb%3A0xe7665fed802ab69!2s51+Rue+de+Vincennes%2C+93100+Montreuil!5e0!3m2!1sfr!2sfr!4v1485871899919"
             frameborder="0" style="border:0" allowfullscreen></iframe>
-
-
     </section>
     <footer>
         <div id="contact">
