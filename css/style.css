@@ -1,0 +1,237 @@
+/* Slideshow container */
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    text-align: center;
+
+}
+
+.image {
+    width: 80vw;
+    height: 40vh;
+}
+
+body, a, p, h1, h2, h3, h4, h5, h6, ul, span, button, form, input {
+    margin: 0;
+    padding: 0;
+    background-color: none;
+    border: none;
+    box-shadow: none;
+}
+
+body {
+    font-family: sans-serif;
+    color: rgb(79, 79, 79);
+    box-sizing: border-box;
+}
+
+section {
+    padding: 50px 35px;
+}
+
+.titles {
+    font-size: 2rem;
+    padding: 15px 0;
+    color: rgb(150, 116, 57);
+    text-transform: capitalize;
+}
+
+#nav-header {
+    padding: 20px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 50px;
+}
+
+#nav-header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#nav-header li {
+    padding: 0 10px;
+}
+
+#nav-header a {
+    text-decoration: none;
+    color: rgb(150, 116, 57);
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+#nav-header li a:hover {
+    border-bottom: 2px solid rgb(150, 116, 57);
+}
+
+#nav-header li button {
+    font-size: 1rem;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(150, 116, 57);
+    background-color: rgb(150, 116, 57);
+    transition: 0.3s;
+}
+
+#nav-header li button:hover {
+    background-color: #fff;
+    color: rgb(150, 116, 57);
+}
+
+#nav-header li:last-of-type {
+    position: relative;
+}
+
+.logo {
+    top: -50%;
+    width: 250px;
+    margin-left: -35px;
+}
+
+#panier-container {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    display: none;
+}
+
+#panier {
+    background-color: white;
+    border-collapse: collapse;
+    width: 550px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    z-index: 250;
+}
+
+#panier-container td, #panier-container th {
+    text-transform: capitalize;
+    text-align: center;
+    border: 2px solid rgb(150, 116, 57);
+    padding: 5px;
+}
+
+
+/* titre la grande bouffe+ description */
+
+#titre_principal {
+    color: rgb(150, 116, 57);
+    text-align: center;
+    font-size: 50px;
+    font-family: montserrat;
+    margin-top: 30px;
+}
+
+#description {
+    margin: 30px 130px 0 140px;
+}
+
+
+/* plats de la carte */
+
+#carte {
+    padding: 20px 35px;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-between;
+    margin: 50px 50px 50px 35px;
+    flex-wrap: wrap;
+    background-size: 10% 10%;
+    padding: 0px;
+}
+
+.plat {
+    border: 1px #ececec solid;
+    text-align: center;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 323px;
+    margin-bottom: 30px;
+}
+
+.plat img {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 30px 30px 30px 30px;
+    justify-content: space-between;
+}
+
+h1.titre_plat {
+    margin: 30px 0px;
+    justify-content: space-around;
+    /*padding: 10px 10px 10px 10px;*/
+    font-size: 25px;
+    text-align: center;
+    color: rgb(150, 116, 57);
+}
+
+.description_plat {
+    justify-content: center;
+    height: 150px;
+    margin: 30px 15px 30px 0px;
+    font-size: 15px;
+}
+
+
+}
+.footer-plat {
+    /*display:flex;*/
+
+    justify-content: space-between;
+}
+.price_plat {
+    border-top: 2px solid rgb(223, 222, 227);
+    font-size: 1.5rem;
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+    padding: 26px 0px;
+    color: rgb(150, 116, 57);
+}
+input.button {
+    color: #fff;
+    /*border-radius: 20px;*/
+
+    background-color: rgb(150, 116, 57);
+    padding: 35px 0px;
+    font-weight: bold;
+    display: inline-block;
+    width: 48%;
+    vertical-align: middle;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+input.button:hover {
+    background-color: rgb(195, 155, 86);
+}
+
+/* PARTIE CONTACT */
+#map {
+    width: 100%;
+    height: 400px;
+}
+footer {
+    background-color: rgb(246, 241, 233);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+footer li {
+    padding: 10px;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(150, 116, 57);
+}

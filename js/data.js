@@ -1,5 +1,5 @@
 var contenu = {
-  name: 'La bonne bouffe',
+  name: 'La Grande Bouffe',
   description: 'Venez goûter nos plats préparés avec amours et bienveillance. Notre chef Gertrude viendra probablement vous serrer la main. Vous pourrez échanger avec cette passionnée de cuisine et repartir avec des conseils pour reproduire sa cuisine inimitable',
   images: [
     'https://media-cdn.tripadvisor.com/media/photo-s/02/1b/9a/bf/le-grande-bouffe.jpg',
@@ -8,7 +8,7 @@ var contenu = {
     'http://scrat.hellocoton.fr/img/guide/recette-ma-salade-tiede-de-chou-kale-et-lentilles-patates-douces-et-saumon-fume-18911644.jpg'
   ],
   baseline: 'La promo7 vous régale',
-  addresse: '51, rue de Vincennes',
+  adresse: '51, rue de Vincennes',
   codePostale: '93100',
   ville: 'Montreuil',
   carte: [
