@@ -1,37 +1,3 @@
-/* Slideshow container */
-
-.slideshow-container {
-    position: relative;
-    margin: auto;
-    text-align: center;
-}
-
-#slides {
-    list-style: none;
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    height: 60vh;
-    z-index: 2;
-}
-
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: 1s ease;
-}
-
-.showing {
-    opacity: 1;
-    z-index: 5;
-}
-
 body, a, p, h1, h2, h3, h4, h5, h6, ul, span, button, form, input {
     margin: 0;
     padding: 0;
@@ -51,23 +17,31 @@ section {
 }
 
 .titles {
-    font-size: 2rem;
-    padding: 15px 0;
+    font-size: 2.4rem;
+    padding: 30px 0;
     color: rgb(150, 116, 57);
     text-transform: capitalize;
 }
 
 #nav-header {
-    padding: 20px 35px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 35px;
+    background-color: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-    margin-bottom: 50px;
 }
 
 #nav-header ul {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     list-style: none;
 }
@@ -137,44 +111,123 @@ section {
     padding: 5px;
 }
 
+header {
+    padding: 100px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+    color: #fff;
+}
+
 
 /* titre la grande bouffe+ description */
 
-#titre_principal {
-    color: rgb(150, 116, 57);
+#titre-container {
+    z-index: 50;
+    width: 70%;
     text-align: center;
-    font-size: 50px;
-    font-family: montserrat;
+}
+
+#titre_principal {
+    text-align: center;
+    font-size: 5rem;
     margin-top: 30px;
 }
 
 #description {
-    margin: 30px 130px 0 140px;
+    font-size: 1.4rem;
+    margin: 30px 0;
+}
+
+
+/* Slideshow container */
+
+.slideshow-filter {
+    z-index: 6;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slideshow-container {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#slides {
+    list-style: none;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 1s ease;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 5;
+}
+
+#main-container {
+    padding: 0 10%;
 }
 
 
 /* plats de la carte */
 
 #carte {
-    padding: 20px 35px;
+    padding: 20px 0;
     display: flex;
     /*align-items: center;*/
     justify-content: space-between;
-    margin: 50px 50px 50px 35px;
+    /*margin: 50px 50px 50px 35px;*/
     flex-wrap: wrap;
     background-size: 10% 10%;
     padding: 0px;
 }
 
 .plat {
-    border: 1px #ececec solid;
+    /*border: 1px #ececec solid;*/
+    border-radius: 10px;
     text-align: center;
-    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
     width: 323px;
     margin-bottom: 30px;
+    position: relative;
+    height: 500px;
+    transition: 0.3s ease;
+}
+
+.plat:hover {
+    transform: scale(1.05);
 }
 
 .plat img {
+    border-radius: 10px 10px 0 0;
     width: 100%;
     height: 180px;
     margin-bottom: 30px 30px 30px 30px;
@@ -192,49 +245,53 @@ h1.titre_plat {
 
 .description_plat {
     justify-content: center;
-    height: 110px;
     margin: 30px 15px 30px 0px;
     font-size: 15px;
 }
 
-
-}
 .footer-plat {
-    /*display:flex;*/
-
-    justify-content: space-between;
-}
-.price_plat {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     border-top: 2px solid rgb(223, 222, 227);
+}
+
+.price_plat {
     font-size: 1.5rem;
     width: 50%;
     height: 50%;
-    display: inline-block;
     text-align: center;
-    padding: 34px 0px;
     color: rgb(150, 116, 57);
 }
+
 #button {
     color: #fff;
     background-color: rgb(150, 116, 57);
     padding: 35px 0px;
     font-weight: bold;
-    display: inline-block;
-    width: 48%;
+    width: 50%;
     vertical-align: middle;
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
+    border-bottom-right-radius: 10px;
 }
+
 #button:hover {
     background-color: rgb(195, 155, 86);
 }
 
+
 /* PARTIE CONTACT */
+
 #map {
+    border: 2px solid rgb(195, 155, 86);
     width: 100%;
     height: 400px;
 }
+
 footer {
     background-color: rgb(246, 241, 233);
     display: flex;
@@ -242,23 +299,28 @@ footer {
     justify-content: space-between;
     padding: 20px 35px;
 }
+
 footer ul {
     list-style: none;
     display: flex;
     align-items: center;
 }
+
 footer li {
     padding: 10px;
     transition: 0.4s;
 }
+
 footer li:hover {
     background-color: rgb(150, 116, 57);
 }
+
 footer a {
     text-decoration: none;
     color: rgb(150, 116, 57);
     transition: 0.4s;
 }
+
 footer li:hover a {
     color: white;
     text-decoration: none;
